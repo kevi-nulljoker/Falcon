@@ -1,0 +1,94 @@
+.huly-button-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 12px;
+}
+
+/* OUTER AMBIENT GLOW */
+.button-ambient-glow {
+  position: absolute;
+  inset: 0;
+  background: #ff6b00;
+  filter: blur(28px);
+  opacity: 0.35;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+/* MAIN BUTTON */
+.huly-action-btn {
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 42px;
+  border-radius: 999px;
+
+  background: #efe5e5;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.huly-action-btn:hover {
+  transform: scale(1.04);
+}
+
+/* CURSOR-FOLLOWING INTERNAL LIGHT */
+.internal-light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background: radial-gradient(
+    140px 140px at var(--x, 80%) var(--y, 50%),
+    rgba(255, 255, 245, 0.9),
+    rgba(255, 170, 129, 0.55),
+    rgba(255, 170, 129, 0.25),
+    transparent 70%
+  );
+
+  opacity: var(--opacity, 0.6);
+  transition: opacity 0.25s ease;
+}
+
+/* TEXT + ICON */
+.btn-text {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #5a250a;
+  z-index: 2;
+}
+
+.btn-arrow {
+  width: 17px;
+  height: 9px;
+  color: #5a250a;
+  z-index: 2;
+}
+
+
+.btn-secondary2{
+    align-items: center;
+box-sizing:border-box;
+/* display:flex; */
+height:48px;
+justify-content:center;
+margin-bottom:0px;
+margin-left:10px;
+margin-right:0px;
+margin-top:0px;
+min-height:40px;
+padding-bottom:0px;
+padding-left:32px;
+padding-right:32px;
+padding-top:0px;
+width:200px;
+border-radius: 100px;
+}
